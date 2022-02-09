@@ -10,3 +10,14 @@ export async function getPokemon(start, end) {
 
   return checkError(response);
 }
+
+export async function getPokemonDetail(id) {
+  const response = await client
+    .from('pokemon')
+    .select()
+    .match({ id })
+    .single();
+    
+  console.log('||response', response.data);
+  return checkError(response);
+}
