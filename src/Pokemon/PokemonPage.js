@@ -23,6 +23,7 @@ export default function PokemonPage() {
 
   return (
     <>
+      <h1>Pokémon</h1>
       <span>{page}</span>
       <button onClick={() => setPage(page - 1)}
         disabled={(page === 1)}>Previous</button>
