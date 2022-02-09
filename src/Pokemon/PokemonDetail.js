@@ -45,34 +45,3 @@ export default function PokemonDetail() {
     </>
   );
 }
-
-// ability_1: "keen-eye"
-// ability_2: "tangled-feet"
-// ability_hidden: "big-pecks"
-// attack: 80
-// base_experience: 216
-// color_1: "#A8A878"
-// color_2: "#A890F0"
-// color_f: "#A8A295"
-// defense: 75
-// egg_group_1: "flying"
-// egg_group_2: "NA"
-// evolution_chain_id: "6"
-// evolves_from_species_id: "17"
-// generation_id: "1"
-// height: 15
-// hp: 83
-// id: 23
-// pokebase: "pidgeot"
-// pokedex: "http://www.pokemon.com/us/pokedex/pidgeot"
-// pokemon: "pidgeot"
-// shape: "wings"
-// shape_id: "9"
-// special_attack: 70
-// special_defense: 70
-// species_id: 18
-// speed: 101
-// type_1: "normal"
-// type_2: "flying"
-// url_image: "http://assets.pokemon.com/assets/cms2/img/pokedex/full/018.png"
-// weight: 395

@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import { getPokemon } from '../services/fetch-utils';
 import PokemonList from './PokemonList';
 
-
 export default function PokemonPage() {
 
   const [pokemonArray, setPokemonArray] = useState([]);

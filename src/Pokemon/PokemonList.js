@@ -2,7 +2,6 @@ import React from 'react';
 import Pokemon from './Pokemon';
 
 export default function PokemonList({ pokemonArray }) {
-  // console.log('||pokemonArray', pokemonArray);
   return (
     <>
       <h2>Gotta Catch &apos;Em All</h2>

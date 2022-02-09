@@ -6,7 +6,6 @@ export async function getPokemon(start, end) {
     .from('pokemon')
     .select()
     .range(start, end);
-  // console.log('||response', response.data);
 
   return checkError(response);
 }
@@ -18,6 +17,5 @@ export async function getPokemonDetail(id) {
     .match({ id })
     .single();
     
-  // console.log('||response', response.data);
   return checkError(response);
 }
