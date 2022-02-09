@@ -4,10 +4,10 @@ import Pokemon from './Pokemon';
 export default function PokemonList({ pokemonArray }) {
   // console.log('||pokemonArray', pokemonArray);
   return (
-    <div>
+    <section>
       {pokemonArray.map((pokemon, i) => 
         <Pokemon key={pokemon + i} pokemon={pokemon} />
       )}
-    </div>
+    </section>
   );
 }

@@ -1,0 +1,10 @@
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+figure img {
+  width: 250px;
+  height: 250px;
+}
