@@ -18,6 +18,6 @@ export async function getPokemonDetail(id) {
     .match({ id })
     .single();
     
-  console.log('||response', response.data);
+  // console.log('||response', response.data);
   return checkError(response);
 }
