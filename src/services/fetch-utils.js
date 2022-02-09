@@ -6,7 +6,7 @@ export async function getPokemon(start, end) {
     .from('pokemon')
     .select()
     .range(start, end);
-  console.log('||response', response.data);
+  // console.log('||response', response.data);
 
   return checkError(response);
 }

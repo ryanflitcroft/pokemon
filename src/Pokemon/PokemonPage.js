@@ -1,12 +1,12 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { getPokemon } from '../services/fetch-utils';
-
+import PokemonList from './PokemonList';
 
 
 export default function PokemonPage() {
 
-  const [pokemon, setPokemon] = useState([]);
+  const [pokemonArray, setPokemonArray] = useState([]);
   const [page, setPage] = useState(1);
   const PER_PAGE = 20;
 
@@ -14,14 +14,11 @@ export default function PokemonPage() {
     async function getData() {
       const start = page * PER_PAGE - PER_PAGE + 1;
       const end = page * PER_PAGE;
-      // console.log('||start', start, 'end', end);
       const data = await getPokemon(start, end);
-      console.log('||data', data);
-      setPokemon(data);
+      setPokemonArray(data);
 
     }
     getData();
-    console.log('||pokemon', pokemon);
   }, [page]);
 
   return (
@@ -30,7 +27,8 @@ export default function PokemonPage() {
       <button onClick={() => setPage(page - 1)}
         disabled={(page === 1)}>Previous</button>
       <button onClick={() => setPage(page + 1)}
-        disabled={(pokemon.length < PER_PAGE)}>Next</button>
+        disabled={(pokemonArray.length < PER_PAGE)}>Next</button>
+      <PokemonList pokemonArray={pokemonArray} />
     </>
   );
 }
